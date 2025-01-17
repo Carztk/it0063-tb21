@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #F0F2F5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.texts {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.textfb {
+    color: #4576ED;
+    font-family: HelveticaNeueW01-55Roma, HelveticaNeueW02-55Roma, HelveticaNeueW10-55Roma, sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.textsub {
+    color: black;
+    font-family: HelveticaNeueW01-55Roma, HelveticaNeueW02-55Roma, HelveticaNeueW10-55Roma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 180px;
+    left: 1000px;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 90%;
+    padding: 10px;
+    background-color: #4576ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #365acb;
+}
+
+.forgot-password {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4576ed;
+    cursor: pointer;
+}
+
+.create-account {
+    background-color: #42b72a;
+    margin-top: 20px;
+}
+
+.create-account:hover {
+    background-color: #36a420;
+}
