@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: solid black 2px;
+    box-shadow: black 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    width: 150px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 13px solid purple;
+    opacity: 0; /* Box is hidden at start */
+    top: -200px; /* Start off-screen */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.new-box {
+    animation: dropDown 1s ease-in-out forwards;
+    opacity: 1;
+}
+
+.bounce-up {
+    animation: bounceUp 1s ease-in-out forwards;
+}
+
+@keyframes dropDown {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+    100% {
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@keyframes bounceUp {
+    0% {
+        top: 250px;
+        opacity: 1;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: -200px;
+        opacity: 0;
+    }
+}
